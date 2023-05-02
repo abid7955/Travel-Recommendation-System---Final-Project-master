@@ -72,7 +72,7 @@ def home():
 @app.route('/dataset')
 def data():
     df_summ=pd.read_csv("dataset_summary.csv").head(100)
-    return render_template("/static/templates/dataset.html", data=df_summ, column_name=df_summ.columns.values,row_data=list(df_summ.values.tolist()))
+    return render_template("dataset.html", data=df_summ, column_name=df_summ.columns.values,row_data=list(df_summ.values.tolist()))
 
 @app.route('/', methods=['POST'])
 def hasil():
