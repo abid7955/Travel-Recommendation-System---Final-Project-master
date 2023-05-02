@@ -1,2 +1,8 @@
 Flask
 Gunicorn
+joblib
+numpy
+pandas
+seaborn
+matplotlib
+sklearn
